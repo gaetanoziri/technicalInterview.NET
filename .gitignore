@@ -1,0 +1,7 @@
+.vs/
+packages/
+TestResults/
+technicalInterview/bin/
+technicalInterview/obj/
+technicalInterviewTests/bin/
+technicalInterviewTests/obj/
