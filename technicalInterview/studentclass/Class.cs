@@ -54,9 +54,9 @@ namespace technicalInterview.studentclass
         /// </summary>
         /// <returns></returns>
         public List<Student> GetOrderedStudentList()
-		{
-            // TODO: implements the method
-            throw new NotImplementedException();
+        {
+            students.Sort((a, b) => a.CompareTo(b));
+            return students;
         }
 
         static List<Student> GenerateStudents(int count)

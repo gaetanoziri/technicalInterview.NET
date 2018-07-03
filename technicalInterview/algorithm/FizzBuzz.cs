@@ -19,8 +19,12 @@ namespace technicalInterview.algorithm
     {
         public static string Generate(int count)
         {
-            // TODO: write FizzBuzz algorithm
-            throw new NotImplementedException();
+            return string.Join(" ", Enumerable.Range(1, Math.Max(count, 0)).Select(i => {
+                if (i % 15 == 0) return "Fizz Buzz";
+                if (i % 3 == 0) return "Fizz";
+                if (i % 5 == 0) return "Buzz";
+                return i + "";
+            }));
         }
     }
 }

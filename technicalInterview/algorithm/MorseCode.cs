@@ -33,6 +33,7 @@ namespace technicalInterview.algorithm
     /// </summary>
     public class MorseCode
     {
+
         static readonly Dictionary<string, string> morseAlphabet = new Dictionary<string, string>() {
             { ".-", "A" },
             {"-...", "B"},
@@ -77,8 +78,19 @@ namespace technicalInterview.algorithm
 
         public static string Decode(string s)
         {
-            // TODO: write MorseCodeDecode algorithm
-            throw new NotImplementedException();
+            StringBuilder buf = new StringBuilder();
+            s = s.Trim().ToUpper();
+            foreach (String word in s.Split(new string[] { "   " }, StringSplitOptions.None))
+            {
+                foreach (String symbol in word.Split(' '))
+                {
+                    String letter = morseAlphabet[symbol];
+                    buf.Append(letter);
+
+                }
+                buf.Append(" ");
+            }
+            return buf.ToString().Trim();
         }
     }
 }

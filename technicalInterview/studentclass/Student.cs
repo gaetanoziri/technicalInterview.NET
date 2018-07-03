@@ -22,8 +22,7 @@ namespace technicalInterview.studentclass
 
         public int CompareTo(Student other)
         {
-            // TODO: implements the method
-            throw new NotImplementedException();
+            return this.grade > other.grade ? -1 : 1;
         }
     }
 }
