@@ -8,7 +8,7 @@ This project contains some exercises to solve algorithmically
 
 
 ## How to contribute
-* Create a branch with your name 
+* Create a branch with your surname-name 
 * Solve the exercises
 * Commit
 * Push
